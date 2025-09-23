@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import { Literata } from 'next/font/google';
+import { Literata, Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -15,6 +15,12 @@ const fontSerif = Literata({
   variable: '--font-serif',
 });
 
+const fontSans = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-sans',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,7 +31,8 @@ export default function RootLayout({
       <body
         className={cn(
           'font-serif antialiased',
-          fontSerif.variable
+          fontSerif.variable,
+          fontSans.variable
         )}
       >
         {children}

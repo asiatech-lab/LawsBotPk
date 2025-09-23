@@ -114,13 +114,7 @@ export default function LawPlanClient() {
   };
 
   return (
-    <div
-      className="flex flex-col min-h-screen text-foreground bg-cover bg-center bg-fixed"
-      style={{
-        backgroundImage:
-          "url('https://ercevskoe-r29.gosweb.gosuslugi.ru/netcat_files/37/45/femida.jpg')",
-      }}
-    >
+    <div className="flex flex-col min-h-screen text-foreground bg-gradient-to-br from-background via-background to-secondary/20">
       <div className="flex flex-col min-h-screen bg-black/30">
         {isLoading && (
           <div className="fixed inset-0 bg-black/50 z-50 flex flex-col items-center justify-center">

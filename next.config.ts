@@ -3,10 +3,10 @@ import type {NextConfig} from 'next';
 const nextConfig: NextConfig = {
   /* config options here */
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false, // Enable TypeScript checking for production
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false, // Enable ESLint checking for production
   },
   images: {
     remotePatterns: [
@@ -25,12 +25,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'ercevskoe-r29.gosweb.gosuslugi.ru',
         port: '',
         pathname: '/**',
       },

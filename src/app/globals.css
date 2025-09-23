@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 6% 18%; /* Dark, desaturated olive */
+    --foreground: 45 30% 95%; /* Off-white for text */
+    --card: 40 5% 15%; /* Slightly darker than background */
+    --card-foreground: 45 30% 95%;
+    --popover: 40 6% 18%;
+    --popover-foreground: 45 30% 95%;
+    --primary: 45 42% 54%; /* Muted Gold */
+    --primary-foreground: 40 10% 10%;
+    --secondary: 42 27% 41%; /* Warm Sepia */
+    --secondary-foreground: 45 30% 95%;
+    --muted: 42 27% 41%;
+    --muted-foreground: 45 20% 70%;
+    --accent: 42 27% 41%;
+    --accent-foreground: 45 30% 95%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 42 27% 31%; /* Darker Sepia */
+    --input: 42 27% 25%;
+    --ring: 45 42% 44%;
+    --radius: 0.5rem;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 40 6% 18%; /* Dark, desaturated olive */
+    --foreground: 45 30% 95%; /* Off-white for text */
+    --card: 40 5% 15%; /* Slightly darker than background */
+    --card-foreground: 45 30% 95%;
+    --popover: 40 6% 18%;
+    --popover-foreground: 45 30% 95%;
+    --primary: 45 42% 54%; /* Muted Gold */
+    --primary-foreground: 40 10% 10%;
+    --secondary: 42 27% 41%; /* Warm Sepia */
+    --secondary-foreground: 45 30% 95%;
+    --muted: 42 27% 41%;
+    --muted-foreground: 45 20% 70%;
+    --accent: 42 27% 41%;
+    --accent-foreground: 45 30% 95%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 42 27% 31%; /* Darker Sepia */
+    --input: 42 27% 25%;
+    --ring: 45 42% 44%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .hammer-animation {
+    animation: hammer 1s ease-in-out infinite;
+    transform-origin: bottom right;
+  }
+
+  @keyframes hammer {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(45deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}

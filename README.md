@@ -3,6 +3,8 @@
 An AI-powered legal strategy assistant that provides legal analysis and action plans for Pakistani law cases. Built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
+<img width="1920" height="2010" alt="image" src="https://github.com/user-attachments/assets/961cb4ea-5542-486e-a994-00f8200c468a" />
+
 
 - 🤖 AI-powered legal analysis
 - 📋 Step-by-step action plans
